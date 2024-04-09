@@ -15,13 +15,13 @@ Project ==> Maven
 
 Select the language as **Java**
 
-![img.png](../img.png)
+![img.png](images/img.png)
 
 ## Spring Boot 
 
 Select the Spring Boot version **3.2.4**
 
-![img_1.png](../img_1.png)
+![img_1.png](images/img_1.png)
 
 ## Project Metadata
 
@@ -42,13 +42,13 @@ Now copy below mentioned info
 7) Java ==>     **17**
 
 
-![img_2.png](../img_2.png)
+![img_2.png](images/img_2.png)
 
 
 ## Dependencies
 Please click on ADD Dependencies to add project library dependencies.
 
-![img_3.png](../img_3.png)
+![img_3.png](images/img_3.png)
 
 Select below libraries
 1) Spring Web
@@ -57,13 +57,29 @@ Select below libraries
 4) H2 Database
 5) Lombok 
 
-![img_4.png](../img_4.png)
+![img_4.png](images/img_4.png)
 
 ## Generate Project
 
 Click on Generate project. So that we can dowload project zip folder into our dowload folder
 
-![img_5.png](../img_5.png)
+![img_5.png](images/img_5.png)
 
 
+## Downloaded folder
 
+Once you click on Generate You are able to see
+downloaded project like this
+
+![img.png](images/img_7.png)
+
+## Extract Project
+
+Now extract the project by using your favorite
+uncompresson software
+
+![img_1.png](images/img_8.png)
+
+Now you are able to see project folders like this
+
+![img_2.png](images/img_8.png)
