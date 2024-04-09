@@ -11,4 +11,10 @@ by selecting required libraries.
 To create spring boot project from scratch please visit  this project setup guide
 [Project Setup Guide](/milestone1/ProjectSetupGuide.md)
 
-### 
+### Milestone-2 :- Running Spring boot application from intellij Editor
+
+In this milestone we are going to show how to run application code
+from intellij editor.
+
+Please watch detailed instructions here
+[Run Applicatoin From Intellij Editor](/milestone2/RunProjectFromIntellijGuide.md)
