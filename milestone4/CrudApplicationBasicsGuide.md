@@ -16,7 +16,7 @@ Using Crud Application we can perform below actions
 
 4) **Delete** -> Deleting the resource
 
-  Eg :- Deleting Employee Info / Customer Info
+   Eg :- Deleting Employee Info / Customer Info
 
 
 ![img_2.png](img_2.png)
@@ -32,22 +32,22 @@ To perform these crud operations we need to have below classes.
 
 ![img_1.png](img_1.png)
 
-1) Model/Entity Class :-  To save information about the resource. 
+1) **Model/Entity Class** :-  To save information about the resource. 
 
-Eg:- Employee Model/Entity can have information about the employee.
+   Eg:- Employee Model/Entity can have information about the employee.
    i.e it can store employee name, age, address etc..
    
-2) Repository Class:-  we are going to save above employee 
+2) **Repository Class**:-  we are going to save above employee 
 information in the database. So we should have repository class to interact with database.
-Eg:- EmployeeRepository / CustomerRepository
+   Eg:- EmployeeRepository / CustomerRepository
    
-3) Controller Class :- When we make an api call from browser
+3) **Controller Class** :- When we make an api call from browser
    then these controller classes are going to accept these requests and returns data.
    These classes are going to have methods for all crud operations.
    Controller class needs data either from database/Api.
    To fetch data it's going to depend on Service classes.
    
-4) Service Class :- Service classes retains business logic of the application and Acts as middle man between
+4) **Service Class** :- Service classes retains business logic of the application and Acts as middle man between
 controllers and Repositories. When controller needs some data then it's going to call service class.
    Now service class fetches data either from Repos i.e from data bases
    or from API's
