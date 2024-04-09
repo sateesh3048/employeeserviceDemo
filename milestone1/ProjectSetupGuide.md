@@ -9,13 +9,13 @@ Select the project type as **Maven**
 
 Project ==> Maven
 
-![img.png](../images/img.png)
+![img.png](images/img_0.png)
 
 ## Language
 
 Select the language as **Java**
 
-![img.png](images/img.png)
+![img.png](images/img_01.png)
 
 ## Spring Boot 
 
@@ -57,6 +57,9 @@ Select below libraries
 4) H2 Database
 5) Lombok 
 
+Once you selected above libraries, You are able to see
+selected libraries like this.
+
 ![img_4.png](images/img_4.png)
 
 ## Generate Project
@@ -68,7 +71,7 @@ Click on Generate project. So that we can dowload project zip folder into our do
 
 ## Downloaded folder
 
-Once you click on Generate You are able to see
+Once you click on Generate, You are able to see
 downloaded project like this
 
 ![img_7.png](images/img_7.png)
@@ -85,6 +88,9 @@ this folder.
 
 ![img_10.png](images/img_10.png)
 
-You can move this folder to Desktop/Documents.if you click on employeeservice folder, you are able to see project folders like this
+You can move this folder to Desktop/Documents. if you click on employeeservice folder, you are able to see project folders like this
 
 ![img_8.png](images/img_8.png)
+
+## Congratulations 
+Congratulations :) You basic project setup is completed.
