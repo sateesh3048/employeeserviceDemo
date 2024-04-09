@@ -4,6 +4,7 @@ To create new spring boot project we need to visit spring initializer website.
 Please click on this link <a href="https://start.spring.io/" target="_blank">**Spring Initializer**</a>
 
 ### Project
+
 Select the project type as **Maven**
 
 Project ==> Maven
@@ -39,3 +40,26 @@ Select the Spring Boot version **3.2.4**
 6) Packaging    ==> **Jar**
 
 7) Java ==>     **17**
+
+## Dependencies
+Please click on ADD Dependencies to add project library dependencies.
+
+![img_3.png](img_3.png)
+
+Select below libraries
+1) Spring Web
+2) Spring Data JPA
+3) Spring Boot DevTools 
+4) H2 Database
+5) Lombok 
+
+![img_4.png](img_4.png)
+
+## Generate Project
+
+Click on Generate project. So that we can dowload project zip folder into our dowload folder
+
+![img_5.png](img_5.png)
+
+
+
