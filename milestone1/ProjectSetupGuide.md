@@ -51,11 +51,11 @@ Please click on ADD Dependencies to add project library dependencies.
 ![img_3.png](images/img_3.png)
 
 Select below libraries
-1) Spring Web
-2) Spring Data JPA
-3) Spring Boot DevTools 
-4) H2 Database
-5) Lombok 
+1) **Spring Web**
+2) **Spring Data JPA**
+3) **Spring Boot DevTools**
+4) **H2 Database**
+5) **Lombok** 
 
 Once you selected above libraries, You are able to see
 selected libraries like this.
@@ -88,7 +88,7 @@ this folder.
 
 ![img_10.png](images/img_10.png)
 
-You can move this folder to Desktop/Documents. if you click on employeeservice folder, you are able to see project folders like this
+You can move this folder to your favorite location like Desktop/Documents. if you click on employeeservice folder, you are able to see project folders like this
 
 ![img_8.png](images/img_8.png)
 
