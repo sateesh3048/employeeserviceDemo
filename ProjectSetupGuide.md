@@ -24,6 +24,8 @@ Select the Spring Boot version **3.2.4**
 
 ### Project Metadata
 
+![img_2.png](img_2.png)
+
 1) Group        ==> **com.learn**
 
 2) Artifact     ==> **employeeservice**
@@ -37,6 +39,3 @@ Select the Spring Boot version **3.2.4**
 6) Packaging    ==> **Jar**
 
 7) Java ==>     **17**
-
-![img_2.png](img_2.png)
-
