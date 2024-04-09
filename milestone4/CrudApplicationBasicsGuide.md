@@ -2,20 +2,21 @@
 
 Using Crud Application we can perform below actions 
 
-1) create -> create the resource
+1) **Create** -> create the resource
 
-Eg :- creating employees/customers/users.
+    Eg :- creating employees/customers/users.
 
-2) Read -> Read the resource
+2) **Read** -> Read the resource
 
-Eg: Read Employee Info / Customer Info
+   Eg: Read Employee Info / Customer Info
 
-3) Update -> Update the resource
+3) **Update** -> Update the resource
+   
    Eg: Update Employee Info / Customer Info
 
-4) Delete -> Deleting the resource
+4) **Delete** -> Deleting the resource
 
-Eg :- Deleting Employee Info / Customer Info
+  Eg :- Deleting Employee Info / Customer Info
 
 
 ![img_2.png](img_2.png)
