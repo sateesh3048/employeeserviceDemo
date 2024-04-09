@@ -71,15 +71,20 @@ Click on Generate project. So that we can dowload project zip folder into our do
 Once you click on Generate You are able to see
 downloaded project like this
 
-![img.png](images/img_7.png)
+![img_7.png](images/img_7.png)
 
 ## Extract Project
 
 Now extract the project by using your favorite
 uncompresson software
 
-![img_1.png](images/img_8.png)
+![img_9.png](images/img_9.png)
 
-Now you are able to see project folders like this
+Once project folder got extracted, you are able to see
+this folder.
 
-![img_2.png](images/img_8.png)
+![img_10.png](images/img_10.png)
+
+You can move this folder to Desktop/Documents.if you click on employeeservice folder, you are able to see project folders like this
+
+![img_8.png](images/img_8.png)
