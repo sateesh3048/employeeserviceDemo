@@ -21,3 +21,11 @@ Please watch detailed instructions here
 
 ## Milestone3 :- Creating HelloWorldController from SpringBoot
 
+In this milestone we are going to add HelloWorldController to the project and we are going to 
+access welcome message from browser/postman/insomnia.
+
+Please watch detailed instructions here
+[Adding HelloWorld Controller](/milestone3/HelloWorldGuide.md)
+
+
+
