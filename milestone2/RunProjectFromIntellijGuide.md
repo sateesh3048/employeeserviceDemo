@@ -2,9 +2,10 @@
 Now open Intellij Editor.
 
 Click on File -> New -> Project from Existing Sources
+
 ![img.png](images/img.png)
 
-Now Select employeeservice project from folder
+Now Select employeeservice project from the folder where you saved the code
 
 **Import Project as Maven Project**
 
@@ -20,9 +21,10 @@ Now open EmployeeserviceApplication Class from src/main/java/com.learn.employees
 
 Now select mouse Right click to see **Run** option at main method. Click on Run option.
 Now your spring boot application is going to run.
+
 ![img_3.png](images/img_3.png)
 
-## Applicaton console
+## Applicaton Console
 
 You are able to see a console with below details
 
