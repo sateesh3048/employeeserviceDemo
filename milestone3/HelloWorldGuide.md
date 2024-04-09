@@ -3,11 +3,11 @@
 create new java class by Right clicking on src/main/java/com.learn.employeeservice folder
 like shown below.
 
-![img.png](img.png)
+![img.png](images/img.png)
 
 Now you are going to see HelloWorldController file like below
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 ## Adding greet method to the controller like shown below.
 
@@ -70,7 +70,7 @@ http://localhost:8080/welcome
 **Note** :- We can also change the port number of our application. Here I have changed the port number to 8081.
 We can discuss about this in later parts.
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 ## Congratulations
 Congratulations :) Now You are able to add HelloWorld Controller to the project code from intellij.
