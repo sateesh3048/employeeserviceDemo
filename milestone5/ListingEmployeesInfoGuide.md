@@ -19,18 +19,18 @@ In this guide we are going to discuss about
 ### Adding employee package :- 
 Let us create a package with name employee in src/main/java/com.learn.employeeservice.
 
-![img.png](img.png)
+![img.png](images/img.png)
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 ## Employee Entity Creation :-
 
 Let us create a new java class i.e Employee file inside employee folder.
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 ### Adding Fields inside Employee :-
 Let us add below fields
@@ -114,7 +114,7 @@ public class Employee {
 We need Repository to interact with database.
 So Let us create EmployeeRepository interface in employee package.
 
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
 **Note** :- EmployeeRepository is an **interface**. so please select
 type as interface while creating file.
@@ -157,7 +157,7 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 To implement main business logic of the application we need service
 class. So Let us create EmployeeService inside employee package.
 
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
 ### Adding @Service annotation to EmployeeService Class :-
 
@@ -247,7 +247,7 @@ public class EmployeeService {
 
 We are going to create EmployeeController from employee package to expose employee API.
 
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 
 Adding @RestController Annotation and EmployeeService Autowiring to EmployeeController :-
@@ -324,7 +324,7 @@ application.properties.
 
 application.properties is available in src/main/resources path.
 
-![img_7.png](img_7.png)
+![img_7.png](images/img_7.png)
 
 Add  below configurations in application.properties
 ```
@@ -341,7 +341,7 @@ spring.h2.console.enabled=true
 We can also add data to the database by creating data.sql
 inside src/main/resources path.
 
-![img_8.png](img_8.png)
+![img_8.png](images/img_8.png)
 
 Please copy this data to data.sql
 
@@ -361,11 +361,11 @@ you can access these urls.
 
 1) http://localhost:8080/employees/all
 
-![img_9.png](img_9.png)
+![img_9.png](images/img_9.png)
 
 2) http://localhost:8081/employees/100
 
-![img_10.png](img_10.png)
+![img_10.png](images/img_10.png)
 
 ## Congratulations
 Congratulations :) Now You are able to build crud application in the  project code from intellij.
