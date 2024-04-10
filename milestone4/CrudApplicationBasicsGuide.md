@@ -18,15 +18,15 @@ Using Crud Application we can perform below actions
 
    Eg :- Deleting Employee Info / Customer Info
 
-Crud operations for Item resource :-
+#### Crud operations for Item resource :-
 
 ![img_2.png](img_2.png)
 
-CRUD Operations can be mapped to SQL Statements 
+#### CRUD Operations can be mapped to SQL Statements 
 
 ![img_3.png](img_3.png)
 
-CRUD Operations are mapped to HTTP Methods
+#### CRUD Operations are mapped to HTTP Methods
 
 ![img_4.png](img_4.png)
 
