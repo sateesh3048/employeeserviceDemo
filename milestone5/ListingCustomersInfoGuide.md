@@ -49,13 +49,24 @@ Let us add below fields
 ```
 package com.learn.employeeservice.employee;
 
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+@Table(name="employee")
 public class Employee {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private int age;
     private boolean isActive;
     private double salary;
 }
+
 
 ```
 ### Adding Annotations in employee class
@@ -98,6 +109,46 @@ public class Employee {
     private double salary;
 }
 ```
+## EmployeeRepository creation :-
+
+We need Repository to interact with database.
+So Let us create EmployeeRepository interface in employee package.
+
+![img_4.png](img_4.png)
+
+**Note** :- EmployeeRepository is an **interface**. so please select
+type as interface while creating file.
+
+#### EmployeeRepository is going to extends JpaRepository.
+
+JpaRepository ==> JPA(Java Persistence API) Repository is mainly used for managing the data in a Spring Boot Application.
+it contains API for basic CRUD operations and also API for pagination and sorting.
+
+```
+public interface JpaRepository<T,ID>
+Where:
+
+    T: Domain type that repository manages (Generally the Entity/Model class name)
+    ID: Type of the id of the entity that repository manages (Generally the wrapper class of your @Id that is created inside the Entity/Model class)
+
+```
+
+Final version of EmployeeRepository
+
+
+```
+package com.learn.employeeservice.employee;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+}
+
+```
+
+
+
+
 
 
 
