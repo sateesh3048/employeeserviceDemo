@@ -243,12 +243,132 @@ public class EmployeeService {
 }
 
 ```
+## Adding Employee Controller :-
+
+We are going to create EmployeeController from employee package to expose employee API.
+
+![img_6.png](img_6.png)
 
 
+Adding @RestController Annotation and EmployeeService Autowiring to EmployeeController :-
+
+@RestController - marks the class as Api controller, capable of handling the requests.
+
+@RequestMapping - maps HTTP request with a path to a controller method.
+
+We are going to fetch EmployeeService by applying Autowiring.
+
+```
+package com.learn.employeeservice.employee;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class EmployeeController {
+    private EmployeeService employeeService;
+
+    @Autowired // @Autowired is optional.By default spring recognizes this.
+    public EmployeeController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
+}
+```
+## Adding methods to EmployeeController 
 
 
+Let us add getAllEmployees() method to fetch all employees.
+getEmployee() method to fetch single employee information.
 
+@RequestMapping - maps HTTP request with a path to a controller method.
+@GetMapping - maps HTTP Get request with a path to a controller method.
 
+```
+package com.learn.employeeservice.employee;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/employees")
+public class EmployeeController {
+    private EmployeeService employeeService;
+
+    @Autowired // @Autowired is optional.By default spring recognizes this.
+    public EmployeeController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
+
+    @GetMapping("/all")
+    public List<Employee> getAllEmployees() {
+        return employeeService.findAllEmployees();
+    }
+
+    @GetMapping("/{id}")
+    public Employee getEmployee(@PathVariable("id") Long id) {
+        return employeeService.findEmployee(id);
+    }
+}
+
+```
+
+## Adding H2 Database configurations in application.properties
+
+To Add configurations to our spring boot project we are going to use
+application.properties.
+
+application.properties is available in src/main/resources path.
+
+![img_7.png](img_7.png)
+
+Add  below configurations in application.properties
+```
+spring.application.name=employeeservice
+spring.datasource.url=jdbc:h2:mem:employeeServiceDb
+spring.datasource.username=admin
+spring.datasource.password=
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.defer-datasource-initialization=true
+spring.h2.console.enabled=true
+```
+
+## Adding default data to the database.
+We can also add data to the database by creating data.sql
+inside src/main/resources path.
+
+![img_8.png](img_8.png)
+
+Please copy this data to data.sql
+
+```
+insert into employee(id, name, age, is_active, salary) values(100,'Dhoni', 25, true, 100);
+insert into employee(id, name, age, is_active, salary) values(101,'Virat', 35, true, 350);
+insert into employee(id, name, age, is_active, salary) values(102,'Sachin', 45, false, 300);
+insert into employee(id, name, age, is_active, salary) values(103,'SunilGavaskar', 55, false, 400);
+insert into employee(id, name, age, is_active, salary) values(104,'KapilDev', 65, false, 500);
+
+```
+
+## Rerun Application :-
+
+Rerun your application and check is there any errors in console.
+you can access these urls.
+
+1) http://localhost:8080/employees/all
+
+![img_9.png](img_9.png)
+
+2) http://localhost:8081/employees/100
+
+![img_10.png](img_10.png)
+
+## Congratulations
+Congratulations :) Now You are able to build crud application in the  project code from intellij.
 
 
 

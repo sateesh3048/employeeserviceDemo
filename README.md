@@ -36,7 +36,12 @@ How can we implement these crud operations in spring boot?
 To know the answers for the above questions please refer ths guide
 [What are Crud Operations ?](/milestone4/CrudApplicationBasicsGuide.md)
 
+## Milestone5 :- Reading Employee Information from Database 
 
 
+In this guide we are going to learn about how to create controller,service,entity,repo classes.
+How can we fetch data from database.
 
+please refer ths guide
+[Read Employee Info from Database](/milestone5/ListingEmployeesInfoGuide.md)
 
