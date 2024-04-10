@@ -151,8 +151,103 @@ import org.springframework.stereotype.Repository;
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 }
 
+```
+
+## EmployeeService Creation :-
+To implement main business logic of the application we need service
+class. So Let us create EmployeeService inside employee package.
+
+![img_5.png](img_5.png)
+
+### Adding @Service annotation to EmployeeService Class :-
+
+@Service - indicates that an annotated class is a service class.
 
 ```
+package com.learn.employeeservice.employee;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmployeeService {
+    
+}
+```
+## EmployeeRepository object fetching through constructor Injection  :-
+EmployeeService needs EmployeeRepository object to fetch data from
+database.
+
+By using constructor and @Autowired we are setting EmployeeRepository
+object here.
+
+## What is @Autowired?
+The Spring framework enables automatic dependency injection i.e automatic object creation(We don't need to create repo object here. spring is going to create object for us) 
+So if you mark the constructor/method/field with @Autowired spring is going to take care about object creation. 
+
+## Employee Service code with Repo and Service Annotation :-
+```
+package com.learn.employeeservice.employee;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class EmployeeService {
+
+    private EmployeeRepository employeeRepository;
+
+    @Autowired
+    public EmployeeService(EmployeeRepository employeeRepository) {
+        this.employeeRepository = employeeRepository;
+    }
+}
+
+```
+
+## Adding methods in Employee Service class :-
+Let us add findAllEmployees() method
+to fetch all employees from db.
+
+Let us add findEmployee() method to fetch single employee
+details from db.
+
+## Final version of Employee Service class :-
+
+```
+package com.learn.employeeservice.employee;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class EmployeeService {
+
+    private EmployeeRepository employeeRepository;
+
+    @Autowired
+    public EmployeeService(EmployeeRepository employeeRepository) {
+        this.employeeRepository = employeeRepository;
+    }
+
+    List<Employee> findAllEmployees() {
+        return employeeRepository.findAll();
+    }
+
+    Employee findEmployee(Long id) {
+        return employeeRepository.findById(id).orElse(null);
+    }
+}
+
+```
+
+
+
+
+
 
 
 
