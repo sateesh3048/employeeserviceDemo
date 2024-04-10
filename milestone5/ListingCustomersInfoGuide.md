@@ -77,7 +77,7 @@ Let us add all these annotations to the Employee Entity class.
 
 ## Final Version of Employee Entity
 
-````
+```
 package com.learn.employeeservice.employee;
 
 import jakarta.persistence.*;
