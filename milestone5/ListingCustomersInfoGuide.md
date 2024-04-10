@@ -65,7 +65,12 @@ entity class and it can be mapped to a db table.
 
 @Table - Using this annotation we can give database table name.
 
+@Id - Marking specific field as primary key of entity. Eg:- id column.
+
+@GeneratedValue - This annotation is used to specify the primary key generation strategy to use. i.e Instructs database to generate a value for this field automatically. If the strategy is not specified by default AUTO will be used.
+
 @Getter - its shortcut annotation for creating all getter methods
+
 @Setter- shortcut annotation for creating all setter methods.
 
 Let us add all these annotations to the Employee Entity class.
@@ -75,8 +80,7 @@ Let us add all these annotations to the Employee Entity class.
 ````
 package com.learn.employeeservice.employee;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -85,6 +89,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Employee {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private int age;
