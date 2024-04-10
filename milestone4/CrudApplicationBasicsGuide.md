@@ -22,11 +22,11 @@ Using Crud Application we can perform below actions
 
 ![img_2.png](img_2.png)
 
-#### CRUD Operations can be mapped to SQL Statements 
+#### CRUD Operations can be mapped to SQL Statements :- 
 
 ![img_3.png](img_3.png)
 
-#### CRUD Operations are mapped to HTTP Methods
+#### CRUD Operations can be mapped to HTTP Methods :-
 
 ![img_4.png](img_4.png)
 
