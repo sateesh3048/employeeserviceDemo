@@ -121,9 +121,8 @@ type as interface while creating file.
 
 #### EmployeeRepository is going to extends JpaRepository.
 
-JpaRepository ==> JPA(Java Persistence API) Repository is mainly used for managing the data in a Spring Boot Application.
+**JpaRepository** ==> JPA(Java Persistence API) Repository is mainly used for managing the data in a Spring Boot Application.
 it contains API for basic CRUD operations and also API for pagination and sorting.
-
 ```
 public interface JpaRepository<T,ID>
 Where:
@@ -133,16 +132,25 @@ Where:
 
 ```
 
-Final version of EmployeeRepository
+## Adding @Repository annotation to the interface :-
+
+@Repository - indicates that an annotated interface is a repository, which is an abstraction of data access and storage.
+So we are going to add @Repository annotation on top of interface.
+
+
+## Final version of EmployeeRepository
 
 
 ```
 package com.learn.employeeservice.employee;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 }
+
 
 ```
 
