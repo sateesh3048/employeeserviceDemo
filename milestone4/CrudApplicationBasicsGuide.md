@@ -20,22 +20,22 @@ Using Crud Application we can perform below actions
 
 #### Crud operations for Item resource :-
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 #### CRUD Operations can be mapped to SQL Statements :- 
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 #### CRUD Operations can be mapped to HTTP Methods :-
 
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
 
 
 ## How can we perform these crud operations ?
 To perform these crud operations we need to have below classes.
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 1) **Model/Entity Class** :-  To save information about the resource. 
 
@@ -57,4 +57,4 @@ controllers and Repositories. When controller needs some data then it's going to
    Now service class fetches data either from Repos i.e from data bases
    or from API's
 
-![img.png](img.png)
+![img.png](images/img.png)
